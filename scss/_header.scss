@@ -1,0 +1,49 @@
+.header {
+    font-family: 'Raleway', sans-serif;
+
+    &__nav {
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2.75rem;
+        padding-left: 1.25rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 4.5rem;
+            padding-right: 4.875rem;
+            padding-bottom: 2.75rem;
+            padding-left: 4.875rem;
+        }
+    }
+
+    &__logo {
+        img {
+            width: 5.3125rem;
+
+            @include breakpoint-up(medium){
+                width: 8.25rem;
+            }
+
+            @include breakpoint-up(large){
+                width: 11.25rem;
+            }
+        }
+    }
+
+    &__links {
+        font-size: 0.625rem;
+        font-weight: 200;
+
+        @include breakpoint-up(large) {
+            font-size: 1.125rem;
+        }
+        
+        a {
+            padding-left: 1rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        a:hover {
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.feature {
+    padding-top: 0.625rem;
+
+    &__grid {
+        @include breakpoint-up(large){
+            max-width: 56.25rem;
+            margin-left: auto;
+            margin-right: auto;
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem ;
+        }
+    }
+
+    &__item {
+        margin-bottom: 5.375rem;
+    }
+
+    &__icon {
+        margin-bottom: 2rem;
+
+        img {
+            height: 4.375rem;
+        }
+
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+
+    }
+
+    &__description {
+        p {
+            margin: 0 2.5rem;
+        }
+    }
+}

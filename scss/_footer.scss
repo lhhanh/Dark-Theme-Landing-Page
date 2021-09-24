@@ -1,0 +1,94 @@
+.footer {
+    padding-top: 31.25rem;
+    text-align: left;
+    max-width: 77.5rem;
+
+    @include breakpoint-up(large) {
+        margin-left: 3rem;
+    }
+
+    &__logo {
+        padding-bottom: 2.75rem;
+        padding-left: 2.375rem;
+    }
+
+    &__grid {
+        margin-left: 1.6875rem;
+        margin-right: 1.6875rem;
+
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-columns: 1fr 23% 12% 12% 16%;
+            margin-left: 2.375rem;
+        }
+    }
+
+    &__address {
+        display: grid;
+        grid-template-columns: 1.5625rem 1fr;
+        gap: 1.125rem;
+
+        @include breakpoint-up(large) {
+            margin-right: 3rem;
+        }
+        
+    }
+
+    &__contact {
+        margin-bottom: 5.375rem;
+    }
+
+    &__tel {
+        display: grid;
+        grid-template-columns: 1.5625rem 1fr;
+        gap: 1.125rem;
+    }
+
+    &__mail {
+        display: grid;
+        grid-template-columns: 1.5625rem 1fr;
+        gap: 1.125rem;
+    }
+
+    &__textlink {
+        a:hover {
+            font-weight: 700;
+        }
+        
+        &.col1 {
+            margin-bottom: 2rem;
+        }
+
+        &.col2 {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 6.5625rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+
+        a {
+            width: 1.75rem;
+
+            &:hover svg path {
+                fill: $cyan;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+
+    a{
+        color: $cyan;
+    }
+}
