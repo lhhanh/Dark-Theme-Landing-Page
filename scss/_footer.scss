@@ -2,7 +2,9 @@
     background-color: $darkblue-footer;
     padding-top: 31.25rem;
     text-align: left;
-    max-width: 77.5rem;
+    
+    margin: 0;
+    
 
     @include breakpoint-up(large) {
         padding-left: 3rem;
@@ -15,6 +17,7 @@
     }
 
     &__grid {
+        
         margin-left: 1.6875rem;
         margin-right: 1.6875rem;
 
@@ -22,6 +25,7 @@
             display: grid;
             grid-template-columns: 1fr 23% 12% 12% 16%;
             margin-left: 2.375rem;
+            max-width: 77.5rem;
         }
     }
 
@@ -89,8 +93,10 @@
 .attribution {
     font-size: 11px; 
     text-align: center;
+    margin-bottom: 0;
 
     a{
         color: $cyan;
+        
     }
 }
