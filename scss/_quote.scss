@@ -16,11 +16,13 @@
 
         @include breakpoint-up(large) {
             padding-top: 2rem;
+            margin-left: 8.75rem;
+            margin-right: 8.75rem;
             background-size: 3.125rem;
             background-position: 0.125rem 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
+            gap: 2rem;
         }
     }
 
@@ -57,6 +59,10 @@
 
     &__info {
         margin-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1.875rem;
     }
 
     &__name {
