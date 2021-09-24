@@ -555,6 +555,7 @@ button:hover {
 }
 
 .footer {
+  background-color: #0b1523;
   padding-top: 31.25rem;
   text-align: left;
   max-width: 77.5rem;
@@ -563,6 +564,7 @@ button:hover {
 @media (min-width: 64rem) {
   .footer {
     margin-left: 3rem;
+    padding-top: 12.5rem;
   }
 }
 
